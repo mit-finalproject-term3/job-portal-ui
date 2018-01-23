@@ -1,0 +1,23 @@
+.white-logo-title {
+  color: white;
+  margin: 0em;
+  padding: 2.5em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.black-logo-title {
+  color: black;
+  margin: 0em;
+  padding: 2.5em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-holder {
+  width: 50%;
+}
+
+.heading {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #d0d0d0;
+  margin-bottom: 0.75em;
+}

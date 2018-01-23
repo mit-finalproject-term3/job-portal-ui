@@ -1,0 +1,151 @@
+* {
+  /*background-color: rgba(200, 100, 255, 0.2);*/
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1.5px;
+  line-height: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ececec;
+}
+
+h2 {
+  margin: 0.1em;
+}
+
+h1, h3, h4, h5, h6, a {
+  margin: 0.25em;
+}
+
+label {
+  margin: 0.5em 0.25em;
+  display: inline-block;
+}
+
+p, a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #313131;
+}
+
+.App {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.black {
+  color: #000;
+}
+
+.space {
+  height: 5em;
+  width: 100%;
+}
+
+.small-space {
+  height: 2em;
+  width: 100%;
+}
+
+.large-space {
+  height: 15em;
+  width: 100%;
+}
+
+.margin-space {
+  margin-top: 5em;
+}
+
+.card {
+  background-color: #fff;
+  margin-top: 1.5em;
+  padding: 1em;
+  text-align: left;
+}
+
+.icon {
+  padding: 0;
+  margin: 0;
+  margin: 3em;
+  min-width: 0;
+  width: 3em;
+  height: 3em;
+  display: block;
+  border: none;
+}
+
+input, select, textarea, button {
+  outline: none;
+  border: 1px solid #e3e3e3;
+  padding: 1.25em 1em 1.25em 1em;
+  font-size: 12px;
+}
+
+input[type='text'] {
+  /*background-color: #fdfdfd;*/
+}
+
+input[class*='icon'] {
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+}
+
+select {
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 0px;
+  -webkit-appearance: none;
+}
+
+textarea {
+  height: 10em;
+  resize: vertical;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #1c1c1c;
+  box-sizing: border-box;
+  transition:.5s;
+}
+
+button:hover {
+  border: 1px solid #b2b2b2;
+  color: #b2b2b2;
+}
+
+.primary {
+  background: #1c1c1c;
+  color: #fff;
+}
+
+.primary:hover {
+  background-color: #444;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.form-page {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .form-page {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

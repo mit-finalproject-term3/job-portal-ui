@@ -1,0 +1,15 @@
+.cover-background {
+  background: url(https://68.media.tumblr.com/b16b552bdb1850c5c11344f46f9a9e30/tumblr_on8nyeMM3z1qkprgpo1_1280.gif) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+.change-background {
+  background: url(http://www.planwallpaper.com/#static/images/general-night-golden-gate-bridge-hd-wallpapers-golden-gate-bridge-wallpaper.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+.bg-font {
+  color: #fff;
+}

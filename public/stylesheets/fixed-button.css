@@ -1,0 +1,12 @@
+.fixed-button {
+  position: fixed;
+}
+
+#post-listing {
+  margin: 7em 3em;
+  float: left;
+}
+
+#navbar-menu-button {
+  float: left;
+}
