@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchAllListings } from '../actions/listingActions';
+import { Link } from 'react-router-dom';
 
 class SearchBar extends Component {
   constructor() {
@@ -57,9 +58,9 @@ class SearchBar extends Component {
 
               <div className="row">
                 <div className="col-3">
-                  <a href={listing.company_url} target="_blank">
+                  <Link to="/applyform">
                     <button className="fill primary">Apply</button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

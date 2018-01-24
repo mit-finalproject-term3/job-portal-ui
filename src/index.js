@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { Route, Switch } from 'react-router';
 import { ConnectedRouter } from 'react-router-redux';
+import { BrowserRouter } from 'react-router-dom';
 import history from './history';
 import store from './store';
 import App from './App';
@@ -40,3 +41,16 @@ ReactDOM.render(
 );
 
 export default store;
+
+// import React from 'react';
+// import { render } from 'react-dom';
+// import { BrowserRouter } from 'react-router-dom';
+// import App from './App';
+// import './index.css';
+
+// render(
+//   <BrowserRouter>
+//     <App />
+//   </BrowserRouter>,
+//   document.getElementById('root')
+//);

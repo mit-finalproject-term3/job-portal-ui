@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, Row, Col } from 'antd';
 import Logo from '../logo.png';
-
+import isAuthenticated from '../Auth/isAuthenticated';
 export default class Navbar extends Component {
   render() {
     return (
@@ -25,15 +25,27 @@ export default class Navbar extends Component {
               <Menu.Item key="1">
                 <Link to="/">Home</Link>
               </Menu.Item>
-              <Menu.Item key="2">
-                <Link to="/postajob">Post Job</Link>
-              </Menu.Item>
+              {isAuthenticated() && (
+                <Menu.Item key="2">
+                  <Link to="/postajob">Post Job</Link>
+                </Menu.Item>
+              )}
               <Menu.Item key="3">
                 <Link to="/about">About</Link>
               </Menu.Item>
               <Menu.Item key="4">
                 <Link to="/contact">Contact</Link>
               </Menu.Item>
+              {!isAuthenticated() && (
+                <Menu.Item key="5">
+                  <Link to="/login">Login</Link>
+                </Menu.Item>
+              )}
+              {isAuthenticated() && (
+                <Menu.Item key="6">
+                  <Link to="/logout">Logout</Link>
+                </Menu.Item>
+              )}
             </Menu>
           </Col>
         </Row>

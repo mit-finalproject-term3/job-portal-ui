@@ -2,8 +2,9 @@ import 'whatwg-fetch';
 import { notification } from 'antd';
 import { push } from 'react-router-redux';
 import store from '../store';
-const BaseUrl = 'http://localhost:9000/api';
-//const BaseUrl = 'https://3k0sunttgl.execute-api.ap-southeast-2.amazonaws.com/prod/api/';
+//const BaseUrl = 'http://localhost:9000/api';
+const BaseUrl =
+  'https://3k0sunttgl.execute-api.ap-southeast-2.amazonaws.com/prod/api';
 
 function checkStatus(response) {
   if (response.status >= 200 && response.status < 300) {
@@ -11,7 +12,7 @@ function checkStatus(response) {
   }
   const errortext =
     response.statusText ||
-    "We couldn't process your request, Plesae try agaign later";
+    "We couldn't process your request, Plesae try again later";
   notification.error({
     message: `Error ${response.status}: ${response.statusText}`,
     description: errortext
@@ -30,9 +31,7 @@ function checkStatus(response) {
  * @return {object}           An object containing either "data" or "err"
  */
 export default function request(url, options) {
-  const defaultOptions = {
-    credentials: 'include'
-  };
+  const defaultOptions = {};
   const token = sessionStorage.getItem('jwt');
   const newOptions = { ...defaultOptions, ...options };
   newOptions.headers = {

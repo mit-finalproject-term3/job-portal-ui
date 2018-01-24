@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createListing } from '../actions/listingActions';
 import { Upload, message, Button, Icon } from 'antd';
+// import FileUploader from './FileUploader'
 
 class ApplyForm extends Component {
   constructor() {
