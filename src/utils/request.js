@@ -32,7 +32,7 @@ function checkStatus(response) {
  */
 export default function request(url, options) {
   const defaultOptions = {};
-  const token = sessionStorage.getItem('jwt');
+  const token = localStorage.getItem('id_token');
   const newOptions = { ...defaultOptions, ...options };
   newOptions.headers = {
     Accept: 'application/json',
@@ -60,17 +60,6 @@ export default function request(url, options) {
           type: 'logout'
         });
         return;
-      }
-      if (status === 403) {
-        dispatch(push('/exception/403'));
-        return;
-      }
-      if (status <= 504 && status >= 500) {
-        dispatch(push('/exception/500'));
-        return;
-      }
-      if (status >= 404 && status < 422) {
-        dispatch(push('/exception/404'));
       }
     });
 }

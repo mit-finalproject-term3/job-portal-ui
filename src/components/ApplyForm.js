@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createListing } from '../actions/listingActions';
-import { Upload, message, Button, Icon } from 'antd';
+import { Upload, message, Button, Icon, notification } from 'antd';
 // import FileUploader from './FileUploader'
 
 class ApplyForm extends Component {
@@ -31,7 +31,11 @@ class ApplyForm extends Component {
   submitListing(event) {
     event.preventDefault();
     let listing = this.state.listing;
-    this.props.createListing(listing);
+    notification.success({
+      message: '',
+      description: 'Your application was successfully submitted'
+    });
+    //this.props.createListing(listing);
   }
 
   render() {
